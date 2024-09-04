@@ -1,16 +1,6 @@
 package stochastic;
 
-public class Randomly {//随机数据生成器
-
-    //整数生成方法
-    public static int getRandomInt(int min, int max) {//生成一个[min,max]之间的随机整数
-        return (int) (Math.random() * (max - min + 1) + min);
-    }
-
-    //浮点数生成方法
-    public static double getRandomDouble(double min, double max) {
-        return Math.random() * (max - min) + min;
-    }
+public class RandomlyString {//生成随机字符串
 
     //随机字符串
     public static String getRandomString(int length, /*长度*/
@@ -34,5 +24,4 @@ public class Randomly {//随机数据生成器
     public static String getRandomChineseString(int length) {
         return getRandomString(length, 19968, 40869);
     }
-
 }
